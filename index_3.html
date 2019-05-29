@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>q3</title>
+  <script>
+    function google(){
+      var frame= document.getElementById("frame");
+      frame.src="http://www.google.com/webhp?igu=1";
+    }
+    function wikipedia(){
+      var frame= document.getElementById("frame");
+      frame.src="https://www.wikipedia.org/";
+    }
+    function bing(){
+      var frame= document.getElementById("frame");
+      frame.src="https://www.bing.com/";
+    }
+  </script>
+</head>
+
+<body>
+
+  <input type="button" onclick="google()" value="Google">
+  <input type="button" onclick="wikipedia()" value="Wikipedia">
+  <input type="button" onclick="bing()" value="Bing">
+  <iframe id = "frame" height = 500px width=40%></iframe>
+
+
+</body>
+
+</html>

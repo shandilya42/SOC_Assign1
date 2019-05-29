@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>q4</title>
+  <script>
+    function go(){
+      var frame= document.getElementById("frame");
+      var urlink = document.getElementById("urlink");
+      var url=urlink.value;
+      frame.src=url;
+    }
+  </script>
+</head>
+
+<body>
+
+  <form>
+    <input type="text" id="urlink">
+    <input type="button" value="Go!" onclick="go()">
+  </form>
+
+  <iframe id = "frame" height = 500px width=40%></iframe>
+
+
+</body>
+
+</html>

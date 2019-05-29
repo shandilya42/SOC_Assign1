@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>q5</title>
+  <script>
+    function resize(){
+      var width=document.getElementById('width');
+      var height=document.getElementById('height');
+      var frame=document.getElementById('frame');
+      frame.width=parseInt(width.value);
+      frame.height=parseInt(height.value);
+    }
+  </script>
+
+</head>
+
+<body>
+
+  <input type="text" id="width" placeholder="Width in px"><br>
+  <input type="text" id="height" placeholder="Height in px">
+  <input type="button" value='Resize' onclick="resize()"><br>
+  <iframe src="http://www.google.com/webhp?igu=1" id="frame" width=300px height=200px>Facebook</iframe>
+
+
+</body>
+
+</html>
